@@ -6,8 +6,26 @@ body {
 
 .btn {
   padding: 2px 10px;
-  border-style: solid;
-  border-width: 1px;
-  line-height: 20px;
+  border: 1px solid #c46;
   border-radius: 2px;
+  &.btn--mode-primary {
+    color: #fff;
+    background: #c46;
+    line-height: 20px;
+  }
+  &.btn--mode-secondary {
+    color: #000;
+    background: #edbcc8;
+  }
+  &:disabled {
+    opacity: 0.5;
+    .btn__price {
+      background: #aaa;
+    }
+  }
+  &__price {
+    background: #008000;
+    padding: 1px 3px;
+  }
 }
+
